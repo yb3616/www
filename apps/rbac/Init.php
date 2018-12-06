@@ -3,7 +3,7 @@
  * 权限管理：rbac
  * 初始化数据库环境
  *
- * 错误码：101xxxx
+ * 错误码：05
  *
  * @Author    姚斌  <yb3616@126>
  * @License   https://github.com/yb3616/www/blob/master/LICENSE
