@@ -847,7 +847,6 @@ DB::name('foo f')->innerJoin(['bar b'=>'f.bid=b.id'])->select();
 
 ```php
 // 配置参考9.1注释部分
-~~DB::name('test')->db('read01')->select();~~
 DB::name('test', 'read01')->select();
 ```
 
