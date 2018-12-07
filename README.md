@@ -842,11 +842,13 @@ DB::name('foo f')->innerJoin(['bar b'=>'f.bid=b.id'])->select();
 #### 7. *指定数据库配置*
 
 ​	~~YF 使用`[master]`作为默认连接配置，若有多个从数据库可选，请使用`db()`方法指定使用哪个从数据库获取数据。~~
+
 ​	静态方法`name`、`table`、`transaction`均添加第二参数，为数据库配置，默认启用`master`配置。
 
 ```php
 // 配置参考9.1注释部分
-DB::name('test')->db('read01')->select();
+~~DB::name('test')->db('read01')->select();~~
+DB::name('test', 'read01')->select();
 ```
 
 #### 8. *获得数据库连接句柄*
